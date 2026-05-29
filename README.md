@@ -1,7 +1,7 @@
 # 💫 About Me:
 # Chris Turin
 
-Technical Support Engineer based in Boynton Beach, FL (Eastern Time Zone).
+Technical Support Engineer.
 
 I build fintech API integrations, PostgreSQL schemas, and infrastructure tooling to understand the systems I support at a deeper level. Currently targeting roles in technical support engineering, developer support, API support, and implementation engineering at fintech and developer-tooling companies.
 
