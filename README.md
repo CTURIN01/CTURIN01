@@ -1,6 +1,25 @@
 # 💫 About Me:
-Hi, I'm Chris Turin 👋<br>I'm a passionate full-stack developer and aspiring quant engineer with a strong foundation in Python and a keen interest in machine learning and financial technology. I have an eye for building efficient and secure applications, from web-based trading tools to messaging apps with robust end-to-end encryption.<br><br>🌱 Currently Learning: Advancing my understanding of quantitative finance and deepening my skills in cybersecurity and machine learning.<br>🔭 Ongoing Projects:<br>Developing a chat messaging app with media sharing and push notifications.<br>Building a secure authentication system for enhanced web security.<br>💡 Project Interests: Full-stack development, financial data analysis, and innovative tech solutions in the healthcare and fintech industries.<br>💬 Ask Me About: Python development, trading strategies, secure app design, and building impactful portfolio projects.<br>📫 Connect with me: I'm always open to collaborating on exciting new projects or discussing emerging trends in tech and finance. Feel free to reach out or explore my repositories!
+# Chris Turin
 
+Technical Support Engineer based in Boynton Beach, FL (Eastern Time Zone).
+
+I build fintech API integrations, PostgreSQL schemas, and infrastructure tooling to understand the systems I support at a deeper level. Currently targeting roles in technical support engineering, developer support, API support, and implementation engineering at fintech and developer-tooling companies.
+
+---
+
+## Featured Projects
+
+### [PostgreSQL Fintech Database](https://github.com/CTURIN01/project-postgresql)
+
+Normalized PostgreSQL schema modeling KYC status, multi-account balances, transaction history, and fraud flags. Seeded with 500 mock transactions using `generate_series`. Complex analytical queries surface fraud queues, KYC breakdowns, and per-user balance summaries across joined tables. Automated `pg_dump` backups in a Dockerized environment with CI schema validation on GitHub Actions. Versioned troubleshooting runbook included.
+
+### [Plaid Sandbox Integration](https://github.com/CTURIN01/plaid-sandbox-integration)
+
+Working Plaid Link integration built in Node.js and Express. Covers the full OAuth and MFA flow: Link token creation, `public_token` exchange, `access_token` storage, and `item_id` persistence. Syncs transaction data via `/transactions/sync`. Intentionally triggered and documented `INVALID_CREDENTIALS`, `ITEM_LOGIN_REQUIRED`, and authentication failure flows. Includes a support reference document mapping observed API behavior to root cause.
+
+### [DevOps Portfolio](https://github.com/CTURIN01/devops-portfolio)
+
+Production-patterned Django REST API containerized with Docker and deployed via GitHub Actions CI/CD. Includes Terraform infrastructure provisioning (AWS + GCP), Kubernetes deployment, and a Prometheus/Grafana observability stack. Also contains a hybrid cloud incident runbook with SEV-1/2/3 triage checklists, communication templates, and a filled postmortem template.
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/christurin) 
