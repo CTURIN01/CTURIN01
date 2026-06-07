@@ -1,9 +1,9 @@
 # 💫 About Me:
 # Chris Turin
 
-Technical Support Engineer.
+Technical Support Engineer and DevOps Engineer.
 
-I build fintech API integrations, PostgreSQL schemas, and infrastructure tooling to understand the systems I support at a deeper level. Currently targeting roles in technical support engineering, developer support, API support, and implementation engineering at fintech and developer-tooling companies.
+I build fintech API integrations, PostgreSQL schemas, and infrastructure tooling. Currently targeting roles in technical support engineering, developer support, and cloud/DevOps engineering at fintech, developer-tooling, and observability companies.
 
 ---
 
@@ -11,16 +11,27 @@ I build fintech API integrations, PostgreSQL schemas, and infrastructure tooling
 
 ### [PostgreSQL Fintech Database](https://github.com/CTURIN01/project-postgresql)
 
-Normalized PostgreSQL schema modeling KYC status, multi-account balances, transaction history, and fraud flags. Seeded with 500 mock transactions using `generate_series`. Complex analytical queries surface fraud queues, KYC breakdowns, and per-user balance summaries across joined tables. Automated `pg_dump` backups in a Dockerized environment with CI schema validation on GitHub Actions. Versioned troubleshooting runbook included.
+Normalized PostgreSQL schema modeling KYC status, multi-account balances, transaction history, and fraud flags. Seeded with 500 mock transactions using `generate_series`. Analytical queries surface fraud queues, KYC breakdowns, and per-user balance summaries across joined tables. Automated `pg_dump` backups in a Dockerized environment with CI schema validation on GitHub Actions. Versioned troubleshooting runbook committed to repo.
+
 
 ### [Plaid Sandbox Integration](https://github.com/CTURIN01/plaid-sandbox-integration)
+ 
+Working Plaid Link integration in Node.js and Express. Full OAuth and MFA flow: Link token creation, `public_token` exchange, `access_token` storage, and `item_id` persistence. Syncs transaction data via `/transactions/sync`. Intentionally triggered and documented `INVALID_CREDENTIALS`, `ITEM_LOGIN_REQUIRED`, and token expiry failure flows. Support reference document maps observed API behavior to root cause for each error.
 
-Working Plaid Link integration built in Node.js and Express. Covers the full OAuth and MFA flow: Link token creation, `public_token` exchange, `access_token` storage, and `item_id` persistence. Syncs transaction data via `/transactions/sync`. Intentionally triggered and documented `INVALID_CREDENTIALS`, `ITEM_LOGIN_REQUIRED`, and authentication failure flows. Includes a support reference document mapping observed API behavior to root cause.
 
 ### [DevOps Portfolio](https://github.com/CTURIN01/devops-portfolio)
 
-Production-patterned Django REST API containerized with Docker and deployed via GitHub Actions CI/CD. Includes Terraform infrastructure provisioning (AWS + GCP), Kubernetes deployment, and a Prometheus/Grafana observability stack. Also contains a hybrid cloud incident runbook with SEV-1/2/3 triage checklists, communication templates, and a filled postmortem template.
+Live Argo CD v3.4.3 GitOps pipeline syncing from GitHub to Kubernetes with selfHeal and auto-pruning. Kubernetes manifests written from scratch: Deployments, Services, ConfigMaps, Secrets, Namespaces, NetworkPolicies. Django REST API containerized with MySQL using initContainers for dependency ordering, readiness and liveness probes, and resource limits. Full Prometheus and Grafana observability stack deployed via Helm with alerting rules and PromQL dashboards. Terraform provisions AWS and GCP infrastructure. Hybrid cloud incident runbook with SEV-1/2/3 triage checklists and postmortem template.
 
+---
+## Technical Focus
+ 
+- **Observability:** Prometheus, Grafana, PromQL, alerting rules, Kubernetes metrics, log analysis
+- **GitOps and Kubernetes:** Argo CD, Helm, manifests from scratch, selfHeal, NetworkPolicies, probes
+- **Infrastructure:** AWS, GCP, Terraform, Docker, GitHub Actions, GHCR
+- **APIs and Support:** REST APIs, OAuth, JWT, webhook debugging, PostgreSQL, SQL query optimization
+- **Languages:** Python, JavaScript, TypeScript, Node.js, Bash, SQL
+---
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/christurin) 
 
